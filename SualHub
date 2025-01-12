@@ -1,0 +1,30 @@
+local function safeLoad(url)
+    local success, errorMsg = pcall(function()
+        loadstring(game:HttpGet(url))()
+    end)
+    
+    if success then
+        print("Script successfully executed!")
+    else
+        warn("Error executing the script: " .. errorMsg)
+    end
+end
+
+local gameId = game.PlaceId
+
+if gameId == 2753915549 or gameId == 4442272183 or gameId == 7449423635 then
+    -- Blox Fruits
+    print("Blox Fruits detected, running script...")
+    safeLoad("https://raw.githubusercontent.com/SualYoru/SualHub/refs/heads/main/Sual.BF.lua")
+   elseif gameId ==  then
+    -- MM2
+    print("MM2 detected, running script...")
+    safeLoad("https://raw.githubusercontent.com/Tsuo7/TsuoHub/main/memesea")
+else
+    print("Jogo não reconhecido. Nenhum script foi executado.")
+    -- Tower Off Hell
+    print("Tower Off Hell detected, running script...")
+    safeLoad("https://raw.githubusercontent.com/SualYoru/SualHub/refs/heads/main/Sual.tow.lua")
+else
+    print("Game not recognized. No script was executed.")
+end
