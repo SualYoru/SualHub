@@ -31,12 +31,12 @@ end
 --Visual
 local Visuals = Tabs.Credits:AddSection("Visual")
 
-Misc:AddParagraph({
+Visuals:AddParagraph({
         Title = "NOTE*",
         Content = "this Blox Fruits script is in BETA. expect out-dated functions and buggy settings. Updates are regulary wich will make the script run smoother and update functions"
     })
 
-Misc:AddButton({
+Visuals:AddButton({
         Title = "Dragon Fruit West",
         Description = "Dragon West Add.",
         Callback = function()
@@ -44,7 +44,7 @@ Misc:AddButton({
         end
     })
 
-Misc:AddButton({
+Visuals:AddButton({
         Title = "Dragon Fruit East",
         Description = "Dragon East Add.",
         Callback = function()
